@@ -12,6 +12,7 @@ function exec(cmd, args, options) {
       }
     })
   });
+  promise.process = child;
   promise.stdout = child.stdout;
   promise.stderr = child.stderr;
   return promise;
